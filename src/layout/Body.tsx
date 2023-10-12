@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Body({
   children,
-  bg,
+  style,
 }: {
   children: React.ReactNode;
-  bg?: string;
+  style?: string;
 }) {
   return (
     <div
-      className={`col-start-1 col-end-13 lg:grid lg:grid-cols-12 grid grid-cols-1 ${bg}`}
+      className={`col-start-1 col-end-13 lg:grid lg:grid-cols-12 grid grid-cols-1 ${style}`}
     >
       {children}
     </div>

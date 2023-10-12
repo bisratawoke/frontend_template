@@ -1,5 +1,13 @@
 import React from "react";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
-  return <div className="grid grid-cols-12 h-screen">{children}</div>;
+export default function Layout({
+  children,
+  style,
+}: {
+  children: React.ReactNode;
+  style?: string;
+}) {
+  return (
+    <div className={`grid grid-cols-12 h-screen ${style}`}>{children}</div>
+  );
 }
