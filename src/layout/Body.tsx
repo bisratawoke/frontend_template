@@ -9,7 +9,7 @@ export default function Body({
 }) {
   return (
     <div
-      className={`col-start-1 col-end-13 lg:grid lg:grid-cols-12 grid grid-cols-1 ${style}`}
+      className={`col-start-1 col-end-13 md:grid md:grid-cols-12 grid grid-cols-1 ${style}`}
     >
       {children}
     </div>
